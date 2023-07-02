@@ -14,7 +14,9 @@
 
 html{
   /*Text will only be controlled by font-size*/
-  -webkit-text-size-adjust: nome;
+  -webkit-text-size-adjust: none;
+  box-sizing: border-box; /*ensures thar border and padding dont affect the final size */
+  font-size: 100%; /*accesibilyti match the 100 in the browser*/
 }
 
 ol, ul {
@@ -27,7 +29,9 @@ ol, ul {
   overflow-wrap: break-word;
 }
 
-a{
+a,
+a:visited,
+a:active{
   text-decoration: none;
 }
 
@@ -38,3 +42,11 @@ img{
  button, input{
   user-select: none;
  }
+
+h1,
+h2,
+h3{
+  line-height: 1.1;
+  margin-top: 0;
+  font-weight: 700;
+}

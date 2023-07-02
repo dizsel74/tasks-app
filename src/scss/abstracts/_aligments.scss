@@ -1,0 +1,15 @@
+@mixin center-flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin center-top-flex{
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+
+@mixin regular-radius{
+  border-radius: 15px;
+}

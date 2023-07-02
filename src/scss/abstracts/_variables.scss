@@ -2,14 +2,19 @@
 
 $primary-color: #0c80b6;
 $secondary-color: #67edff;
+
 $error-color: #d32752;
 $info-color: #f6c31c;
-$neutral-color: #fbfbfb;
+
+$neutral-color: #ccc;
+$neutral-color-dark: #ccc;
 
 
 // spacing
 $base-padding: 0.75rem;
 $base-margin: 0.75rem;
+
+$medium-margin: 1.25em;
 
 //btn
 $button-padding: 0.75rem  1.5rem;
@@ -18,7 +23,4 @@ $button-padding: 0.75rem  1.5rem;
 $base-border-radius: 10px;
 $base-border-width: 1px;
 
-//font-sizes
-$font-small: 12px;
-$font-regular: 16px;
-$font-big: 20px;
+
