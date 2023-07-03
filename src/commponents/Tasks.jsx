@@ -1,15 +1,15 @@
 import React from "react";
+import { FaTrashAlt } from "react-icons/fa";
+import './TaskForm';
 
-
-
-function Tasks(props){
+function Tasks( {tarea, estado}){
   return(
-    <div className='task-container'>
+    <div className={ estado ? 'task-container task-completada' : 'task-container'}>
       <div className='task-text'>
-      {props.task}
+      {tarea}
       </div>
-      <div className='task-icon'>
-        icon
+      <div className='task-icons-container'>
+       <FaTrashAlt className={estado ? 'task-icon completado' : 'task-icon'}/>
       </div>
     </div>
   );

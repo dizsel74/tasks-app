@@ -1,5 +1,6 @@
 import './App.scss';
 import Tasks from './commponents/Tasks';
+import TaskForm from './commponents/TaskForm';
 
 function App() {
   return (
@@ -7,7 +8,11 @@ function App() {
       <h1>Task tracker app</h1>
       <div className='main-container'>
        <h2>Tasks</h2>
-       <Tasks />
+       <TaskForm />
+       <Tasks 
+        tarea='text dummmy text dummmy text du' 
+        estado='y'
+       />
       </div>
     </div>
   );

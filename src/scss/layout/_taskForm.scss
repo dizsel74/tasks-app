@@ -2,45 +2,32 @@
 @use '../abstracts/variables' as v;
 @use '../abstracts/typography' as t;
 
-
-.task-container{
-  @include center-flex;
-  @include regular-radius;
-  width: clamp(90%, 400px, 100%);
-  min-height: 65px;
-  background-color: #1b1b1b;
-  color: v.$neutral-color;
-  height: 1.5rem;
-  cursor: pointer;
-  margin-block: v.$medium-margin;
+.task-form{
+  margin-top: v.$medium-margin;
+   @include center-flex;
+   
+   //flex-wrap: wrap;
 }
-.task-text{
-  width: 100%;
- 
-  overflow-wrap: anywhere;
-  display: flex;
-  align-items: center;
-  font-size: t.$font-big;
-  padding-left: 10px;
- // padding-top: 12px;
+.task-input{
+   width: 300px;
+   border-radius:  8px ;
+   font-size: t.$font-regular;
+   padding:8px 8px 20px 10px;
+   margin-right: 8px;
+   outline: none;
+   border:none;
+   font-family: t.$font-name;
+   color: v.$neutral-color;
+   background: #0053ba;
+   font-size: t.$font-big;
 }
-
-.task-icon{
-  margin-inline: v.$base-margin;
-  width:20px;
-  height: 20px;
-  
+.task-btn{
+//height: 20px;
+padding: 16px 8px;
+border:none;
+border-radius:  8px;
 }
 
-/* Task Complete */ 
- .task-completada{
-  background-color: v.$dark-neutral-color;
-  text-decoration: line-through;
- }
-
- .completado{
-  color: greenyellow;
- }
 
 
  /*https://css-tricks.com/overriding-default-button-styles/*/
@@ -52,7 +39,7 @@
   margin: 0;
   text-decoration: none;
   background: #0069ed;
-  color: #ffffff;
+  color: v.$neutral-color;
   font-family: t.$font-name;
   font-size: 1rem;
   cursor: pointer;
