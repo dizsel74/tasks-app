@@ -1,0 +1,178 @@
+/* fonts */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,700;1,900&display=swap");
+/* resets */
+* {
+  /*remove default margin and padding*/
+  margin: 0;
+  padding: 0;
+  line-height: calc 1.5rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  /*Text will only be controlled by font-size*/
+  -webkit-text-size-adjust: none;
+  box-sizing: border-box; /*ensures thar border and padding dont affect the final size */
+  font-size: 100%; /*accesibilyti match the 100 in the browser*/
+}
+
+ol, ul {
+  padding: 0;
+  list-style: none;
+}
+
+/*Avoid text Overflows*/
+:where(p, h1, h2, h4, h5, h6) {
+  overflow-wrap: break-word;
+}
+
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+button, input {
+  user-select: none;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.1;
+  margin-top: 0;
+  font-weight: 700;
+}
+
+.task-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  width: clamp(90%, 400px, 100%);
+  min-height: 65px;
+  background-color: #1b1b1b;
+  color: #ccc;
+  height: 1.5rem;
+  cursor: pointer;
+  margin-block: 1.25em;
+}
+
+.task-text {
+  width: 100%;
+  overflow-wrap: anywhere;
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  padding-left: 10px;
+}
+
+.task-icon {
+  margin-inline: 0.75rem;
+  width: 20px;
+  height: 20px;
+}
+
+/* Task Complete */
+.task-completada {
+  background-color: #2a143b;
+  text-decoration: line-through;
+}
+
+.completado {
+  color: greenyellow;
+}
+
+/*https://css-tricks.com/overriding-default-button-styles/*/
+button {
+  display: inline-block;
+  border: none;
+  margin: 0;
+  text-decoration: none;
+  background: #0069ed;
+  color: #ffffff;
+  font-family: "Roboto";
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: center;
+  transition: background 250ms ease-in-out, transform 150ms ease;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+button:hover, button:focus {
+  background: #0053ba;
+}
+button:focus {
+  outline: 1px solid #fff;
+  outline-offset: -4px;
+}
+button:active {
+  transform: scale(0.99);
+}
+
+.task-form {
+  margin-top: 1.25em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.task-input {
+  width: 300px;
+  border-radius: 8px;
+  font-size: 16px;
+  padding: 8px 8px 20px 10px;
+  margin-right: 8px;
+  outline: none;
+  border: none;
+  font-family: "Roboto";
+  color: #ccc;
+  background: #0053ba;
+  font-size: 20px;
+}
+
+.task-btn {
+  padding: 16px 8px;
+  border: none;
+  border-radius: 8px;
+}
+
+/*https://css-tricks.com/overriding-default-button-styles/*/
+button {
+  display: inline-block;
+  border: none;
+  margin: 0;
+  text-decoration: none;
+  background: #0069ed;
+  color: #ccc;
+  font-family: "Roboto";
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: center;
+  transition: background 250ms ease-in-out, transform 150ms ease;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+button:hover, button:focus {
+  background: #0053ba;
+}
+button:focus {
+  outline: 1px solid #fff;
+  outline-offset: -4px;
+}
+button:active {
+  transform: scale(0.99);
+}
+
+body {
+  background-color: #ccc;
+}/*# sourceMappingURL=index.css.map */

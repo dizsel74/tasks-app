@@ -1,0 +1,76 @@
+/* fonts */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,700;1,900&display=swap");
+/* resets */
+* {
+  /*remove default margin and padding*/
+  margin: 0;
+  padding: 0;
+  line-height: calc 1.5rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  /*Text will only be controlled by font-size*/
+  -webkit-text-size-adjust: none;
+  box-sizing: border-box; /*ensures thar border and padding dont affect the final size */
+  font-size: 100%; /*accesibilyti match the 100 in the browser*/
+}
+
+ol, ul {
+  padding: 0;
+  list-style: none;
+}
+
+/*Avoid text Overflows*/
+:where(p, h1, h2, h4, h5, h6) {
+  overflow-wrap: break-word;
+}
+
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+button, input {
+  user-select: none;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.1;
+  margin-top: 0;
+  font-weight: 700;
+}
+
+.App {
+  height: 100vh;
+  width: 100%;
+  font-family: "Roboto";
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-block: 20px;
+}
+
+.main-container {
+  margin: 0.75rem 0;
+  padding: 0.75rem;
+  width: clamp(350px, 50%, 600px);
+  background-color: #0c80b6;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}/*# sourceMappingURL=App.css.map */
