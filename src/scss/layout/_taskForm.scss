@@ -10,16 +10,23 @@
 }
 .task-input{
    width: 300px;
+   height: 3.1rem;
    border-radius:  8px ;
    font-size: t.$font-regular;
-   padding:8px 8px 20px 10px;
+  //  padding:8px 8px 20px 10px;
+   padding-inline: 10px;
    margin-right: 8px;
    outline: none;
    border:none;
    font-family: t.$font-name;
-   color: v.$neutral-color;
+   color: v.$light-neutral-color;
    background: #0053ba;
    font-size: t.$font-big;
+   
+
+   &::placeholder{
+    color: v.$light-neutral-color;
+   }
 }
 .task-btn{
 //height: 20px;
@@ -39,9 +46,10 @@ border-radius:  8px;
   margin: 0;
   text-decoration: none;
   background: #0069ed;
-  color: v.$neutral-color;
+  color: v.$light-neutral-color;
   font-family: t.$font-name;
   font-size: 1rem;
+  font-weight: t.$font-heavy;
   cursor: pointer;
   text-align: center;
   transition: background 250ms ease-in-out, 

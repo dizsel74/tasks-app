@@ -9,14 +9,14 @@
   width: clamp(90%, 400px, 100%);
   min-height: 65px;
   background-color: #1b1b1b;
-  color: v.$neutral-color;
+  color: v.$light-neutral-color;
   height: 1.5rem;
   cursor: pointer;
   margin-block: v.$medium-margin;
 }
+
 .task-text{
   width: 100%;
- 
   overflow-wrap: anywhere;
   display: flex;
   align-items: center;
@@ -29,7 +29,6 @@
   margin-inline: v.$base-margin;
   width:20px;
   height: 20px;
-  
 }
 
 /* Task Complete */ 
@@ -51,7 +50,7 @@
   //padding: 1rem 2rem;
   margin: 0;
   text-decoration: none;
-  background: #0069ed;
+  background: #31da85;
   color: #ffffff;
   font-family: t.$font-name;
   font-size: 1rem;

@@ -1,12 +1,29 @@
-import React from "react";
+import React, { useState } from "react";
+import TaskForm from "./TaskForm";
+import Tasks from './Tasks';
 
-function TaslList(props){
+function TaskList(props){
+    const [task, setTask] = useState([]);
+
+    const agregarTarea = tarea =>{
+      console.log ('+');
+      console.log(tarea);
+    }
+    
   return(
-  <div className='task-list-container'>
-    <ul className='task-list'>
-      <ol className='task-item'></ol>
-    </ul>
-  </div>
+    <>
+    <TaskForm />
+    <div className='task-list-container'>Listado
+      <ul className='task-list'>
+        <ol className='task-item'>
+        <Tasks 
+        tarea='texto dummmy text dummmy texto' 
+        estado='l'
+       />
+        </ol>
+      </ul>
+    </div>
+    </>
 
   );
 }
