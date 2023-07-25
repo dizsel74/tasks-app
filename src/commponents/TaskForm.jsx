@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { AiOutlinePlus } from "react-icons/ai";
+import {v4 as uuidv4} from 'uuid';
+
 
 function TaskForm(props){
 
@@ -14,10 +16,12 @@ const manejarEnvio = e  =>{
   e.preventDefault(); //evita que se recargue la app
 
   const tareaNueva ={
-    id:'123',
+    id:uuidv4(), //gen id
     texto:input,
     estado: false
   }
+  console.log(tareaNueva);
+  props.onSubmit(tareaNueva);
 }
 
   return(
